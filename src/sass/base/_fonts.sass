@@ -1,0 +1,32 @@
+/* @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap') */
+
+@font-face 
+    font-family: 'louis-george'
+    src: url('fonts/louis-george-cafe.ttf')
+    src: url('fonts/louis-george-light.ttf')
+    font-style: normal
+
+@font-face 
+    font-family: 'pt-sans'
+    src: url('fonts/pt-sans-light.ttf'), url('fonts/pt-sans-bold.ttf')
+   
+    font-style: normal 
+
+
+
+
+
+.title 
+    @include fonts(400, 52px, 'pt-sans', 35px)
+   
+   
+
+.sub-title 
+   @include fonts(600, 32px, 'louis-george', 35px)
+   opacity: 0.7
+   margin-top: 10px
+
+
+.text-content   
+    @include fonts(600, 22px, 'louis-george', 25px)
+    opacity: 0.7

@@ -1,0 +1,119 @@
+@media (max-width: 767px)
+    //navbar
+    .navbar 
+        .navbar-brand 
+            img 
+                width: 120px   
+    //btn's
+    .btn-orange,
+    .btn-green  
+        font-size: 16px
+        padding: 8px 25px !important
+    .btn-white  
+        font-size: 14px
+
+    .arrow-right    
+        width: 10px
+        padding-bottom: 1px
+    //tittle sub-tittle & text-content
+    .title  
+        font-size: 30px 
+    .sub-title 
+        font-size: 20px
+        line-height: 1 
+    .text-content   
+        font-size: 16px
+    .box-size-control
+        width: 90px
+        height: 110px
+    // section geed-spot
+    .geed-spot  
+        height: 200px
+        .title
+            font-size: 20px
+            line-height: 1
+            &:after 
+                display: none
+        .sub-title  
+            font-size: 15px
+        &:after 
+            width: 65px
+            height: 75px
+        &:before 
+            width: 80px
+            height: 40px
+    //footer
+    footer  
+        .sub-title
+            font-size: 15px
+
+    // perfil geeder nav
+    .navbar
+        input 
+            border-top-left-radius: 40px 
+            border-bottom-left-radius: 40px 
+            border-bottom-right-radius: 40px 
+            border-top-right-radius: 40px 
+            background: #fff
+    .btn-register-geed
+        background: $primary
+        color: #fff
+        padding: 6px 10px
+        width: 100%
+
+    .box-trade  
+        margin-top: 0
+
+    // cards da loja
+    .blog-card 
+        .meta   
+            width: 100%
+            height: initial !important
+            img 
+                width: 100%
+                height: 200px
+        .description    
+            padding-left: 0
+            margin-top: 8px
+        
+
+// orientation portrait
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .geed-spot  
+        .title
+            &:after 
+                width: 190px
+                height: 155px
+                top: -155px
+    .navbar.navbar-perfil
+        margin-left: 0
+    .box-trade  
+        margin-top: -60px
+    .form-navbar-geeder 
+        input
+            background: #ffffff
+            border-radius: 40px
+    .blog-card 
+        .meta   
+            width: 100%
+            height: initial !important
+            img 
+                height: 230px
+                width: 100%
+        .description    
+            padding-left: 0
+            margin-top: 8px
+
+
+// orientation portrait landscape
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)   
+        .box-trade  
+            .btn-green  
+                font-size: 17px
+            .sub-title  
+                font-size: 20px
+
+
+

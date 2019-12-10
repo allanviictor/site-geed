@@ -1,0 +1,77 @@
+.doing-geed 
+    background: $secondary
+    
+.box-size-control
+    width: 200px
+    height: 150px
+    display: flex
+    align-items: center
+    justify-content: center
+    img 
+        max-width: 100%
+        width: 140px
+        height: 130px
+        object-fit: contain
+        object-position: center
+
+.pattern-white  
+    background:  url('../assets/ptt-white.png')
+    height: 60px
+
+.faq-geed
+    background: #fff
+    box-shadow: -7px 7px 9px 0px rgba(199, 199, 199, 0.6)
+    border-radius: 10px
+    .sub-title  
+        opacity: .9
+    .reading-more   
+        color: black
+        opacity: .6
+        font-size: 18px
+        font-weight: 500
+
+.geed-spot  
+    background: url('../assets/pic-africa.jpg') no-repeat
+    height: 550px
+    background-size: cover
+    background-position-y: 50%
+    &:after 
+        content: ''
+        width: 235px
+        height: 175px
+        position: absolute
+        top: 0
+        left: 0
+        background: url(../assets/gph-pattern-2.png) no-repeat
+        background-size: cover
+    &:before 
+        content: ''
+        width: 315px
+        height: 115px
+        position: absolute
+        bottom: 0
+        right: 0
+        background: url(../assets/gph-pattern-1.png) no-repeat
+        background-size: cover
+    .title  
+        font-size: 46px
+        &:after    
+            content: ''
+            width: 150px
+            height: 220px
+            position: absolute
+            top: -220px
+            right: 3.5%
+            background: url('../assets/ic-geed-spot.png') no-repeat
+            background-size: contain
+            background-position: center 
+    .sub-title  
+        font-size: 30px
+
+
+.arrow-right
+    width: 15px
+    margin-left: 3px
+    padding-bottom: 3px
+    transform: translateX(10px)
+            
