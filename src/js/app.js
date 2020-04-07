@@ -2,12 +2,23 @@ $('.input-amount').keyup(function(e){
     const prop = $(this).attr('change-in')
     const value_input = $(this).val()
     const value_unity = $(`span[unity='${prop}']`).attr('value-unity')
+    var array_validation = []
 
-    if(!$.isNumeric(value_input)){
+    $('.input-amount').each(function(index,element){
+        array_validation.push( Math.floor($(this).val()) )
+        
+    })
+
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    const result = array_validation.reduce(reducer)
+
+    if(result == 0 || !$.isNumeric(result) || NaN){
         $(`.total[price-total='${prop}'] span`).html('')
+        $("#submit-form").addClass('disabled')
     }
     else{
         $(`.total[price-total='${prop}'] span`).html(value_input * value_unity).append(',00')
+        $("#submit-form").removeClass('disabled');
     }
     
 })
@@ -16,7 +27,7 @@ $('.erro-value').hide()
 $('.message-form-submited').hide()
 
 
-$('#form-store').submit(function(event){
+/* $('#form-store').submit(function(event){
 
     event.preventDefault();
 
@@ -32,7 +43,6 @@ $('#form-store').submit(function(event){
     if( result == 0 || !$.isNumeric(result) || NaN){
         $('.erro-value').fadeIn( "slow" ).text('digite a quantidade de produtos')
         setTimeout(function(){ $('.erro-value').fadeOut() }, 3000)
-        console.log(array_validation)
         return false;
     }
     else{
@@ -41,7 +51,27 @@ $('#form-store').submit(function(event){
         return true;
     }
 
-});
+}); */
+
+$('.btn-car-shoping').click(function (){
+    $(this).parent().parent().remove();
+})
+
+$('.view-register-success').hide()
+$('#form-register').submit(function(event){
+    event.preventDefault()
+    var password = $('#password').val();
+    var confirmPassWord = $('#confirm-password').val();
+
+    if( confirmPassWord != password){
+        $('.erro-value').fadeIn( "slow" ).text('confirme a senha corretamente')
+        setTimeout(function(){ $('.erro-value').fadeOut() }, 4000)
+        return false;
+    }
+    $('.view-register').hide()
+    $('.view-register-success').fadeIn("fast")
+    return true;
+})
 
 const values_chart = [
     {
@@ -120,6 +150,8 @@ const line_bars = values_chart.map((value,index) =>{
     div_progress.append(div_bar)
     $('.wrapper-bar-progress').append($('<div>').addClass('text-content').text(`${value.objective}`), div_progress)
 });line_bars
+
+
 
 
 

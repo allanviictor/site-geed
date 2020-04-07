@@ -7,9 +7,9 @@ $button: ("orange": $warning, "green": $primary, "white": #ffffff)
         @include button-default(8px 35px, 30px)
 
         @if $key == 'white'     
-            @include button-default(1px 20px, 30px)
-            border: 1px solid $primary
+            @include button-default(7px 20px, 30px)
             font-size: 16px
+            background: #fff
         &.btn-#{$key}:hover  
             background: darken($value, 3%)
             transition: all 300ms

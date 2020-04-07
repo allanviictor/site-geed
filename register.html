@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="./dist/style.css" >
+</head>
+<body>
+
+
+    <section class="login align-items-center d-flex" style="height:100vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-5">
+                    <div class="box-login">
+                        <div class="card p-3">
+                            <div class="card-body view-register">
+                                <div class="text-center">
+                                    <h3 class="sub-title">Cadastro</h3>
+                                </div>
+                                <form id="form-register" action="">
+                                    <div class="mb-3">
+                                        <label>Email:</label>
+                                        <input placeholder="exemplo@gmail.com" class="form-control" type="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Data de Nascimento:</label>
+                                        <input placeholder="dd/mm/aaaa" class="form-control date" type="text" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Senha:</label>
+                                        <input placeholder="Senha" id="password" class="form-control" type="password" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Confirmar Senha:</label>
+                                        <input placeholder="confirmar senha" id="confirm-password" class="form-control" type="password" required>
+                                        <span class="erro-value"></span>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary mt-1 w-100 text-white">Casdastrar</button>
+                                </form>
+                            </div>
+                            <div class="card-body view-register-success text-center">
+                                <img class="img-fluid success-register" src="./assets/success-register.png" alt="" >
+                                <h3 class="sub-title mt-4">Tudo Certo!</h3>
+                                <p class="text-content mt-4">Cadastro Realizado com Sucesso</p>
+                                <a style="cursor: pointer;" href="./home.html" class="btn btn-primary w-50 text-white">Ok</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    
+</body>
+
+    <script src="./dist/app.js"></script>
+    <script>
+       
+        $('.date').mask('00/00/0000');
+        
+    </script>
+</html>

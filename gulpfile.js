@@ -14,12 +14,11 @@ function style() {
 
 
 function js() {
-    return gulp.src(['./src/js/vendor/jquery.js', './src/js/vendor/bootstrap.min.js', './src/js/vendor/Chart.min.js', './src/js/vendor/chartjs-plugin-labels.min.js', './src/js/app.js'])
+    return gulp.src(['./src/js/vendor/jquery.js', './src/js/vendor/bootstrap.min.js', './src/js/vendor/Chart.min.js', './src/js/vendor/chartjs-plugin-labels.min.js', './src/js/vendor/jquery.mask.min.js', './src/js/app.js'])
     .pipe(concat('app.js')) 
     .pipe(gulp.dest('./dist')) 
     .pipe(browserSync.stream())
 }
-
 
 function watch() {
     browserSync.init({
@@ -35,5 +34,5 @@ function watch() {
 
 exports.style = style;
 exports.watch = watch;
-exports.build = parallel(style, js, watch);
+exports.default = parallel(style, js, watch)
 
