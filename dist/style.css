@@ -488,6 +488,38 @@ footer {
   color: #117a75;
   margin-bottom: 5px; }
 
+.ic-paypal {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.blog-card.shoping-car .sub-title {
+  font-size: 20px; }
+
+.blog-card.shoping-car .shoping-car-description {
+  padding: 10px; }
+  .blog-card.shoping-car .shoping-car-description .wrapper:not(:last-child) {
+    border-bottom: 1px solid #dddddd; }
+  .blog-card.shoping-car .shoping-car-description .wrapper:not(:first-child) {
+    margin-top: 10px; }
+  .blog-card.shoping-car .shoping-car-description .btn-car-shoping-remove-mobile {
+    background: #117a75;
+    padding: 4px 10px;
+    color: #fff;
+    border-radius: 3px; }
+  .blog-card.shoping-car .shoping-car-description p {
+    margin: 0;
+    font-family: 'pt-sans';
+    font-weight: 600;
+    color: #868686;
+    font-size: 13px;
+    align-items: center; }
+    .blog-card.shoping-car .shoping-car-description p span {
+      color: #117a75;
+      font-size: 15px; }
+
 body, html {
   background-color: #f1f1f1 !important; }
 
@@ -539,7 +571,7 @@ body, html {
   .title {
     font-size: 30px; }
   .sub-title {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1; }
   .text-content {
     font-size: 16px; }

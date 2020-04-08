@@ -57,6 +57,10 @@ $('.btn-car-shoping').click(function (){
     $(this).parent().parent().remove();
 })
 
+$('.btn-car-shoping-remove-mobile').click(function(){
+    $(this).parent().parent().remove();
+})
+
 $('.view-register-success').hide()
 $('#form-register').submit(function(event){
     event.preventDefault()
