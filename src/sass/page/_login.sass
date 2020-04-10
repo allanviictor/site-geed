@@ -23,3 +23,16 @@
         width: 80px
     .text-content   
         font-size: 20px
+
+.row-divisor    
+    position: relative
+    &:after 
+        content: ''
+        width: 0.2px
+        height: 50%
+        background: $primary
+        opacity: .5
+        position: absolute
+        top: 50%
+        left: 46%
+        transform: translate(-50%, -50%)
