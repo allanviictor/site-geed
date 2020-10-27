@@ -9,250 +9,253 @@
 </head>
 <body>
 
+    <div id="body-content">
+
+        <header class="header-perfil">
+            <div class="mask"></div>
+            <!-- nav desktop -->
+            <div class="d-lg-block d-none">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="home.html">
+                            <img src="./assets/lg-colorida.png" alt="imagem de capa">
+                        </a>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav d-flex flex-fill justify-content-center">
+                                <li class="d-flex flex-fill justify-content-center nav-item mx-auto">
+                                    <form class="form-navbar-geeder full-radius w-50" action="" method="">
+                                        <div class="box-content-form d-flex position-relative">
+                                            <img class="ic-search position-absolute" src="./assets/ic-search.svg" alt="icone de pesquisa">
+                                            <input type="text" name="search-desktop" placeholder="Pesquisar...">
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="nav-item d-flex align-items-center ml-auto">
+                                    <div class="bar-user d-flex align-items-center ml-auto">
+                                    <div class="divisor mx-4"></div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="box-small-avatar-perfil">
+                                                <img src="./assets/pic-person-perfil.webp" alt="avatar de perfil do usuario">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
     
-    <header class="header-perfil">
-        <div class="mask"></div>
-        <!-- nav desktop -->
-        <div class="d-lg-block d-none">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <a class="navbar-brand" href="home.html">
-                        <img src="./assets/lg-colorida.png" alt="imagem de capa">
+            <!-- nav mobile -->
+            <div class="d-block d-lg-none">
+                <nav class="navbar navbar-perfil-mobile navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/lg-colorida.png" alt="logomarca geed">
                     </a>
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav d-flex flex-fill justify-content-center">
-                            <li class="d-flex flex-fill justify-content-center nav-item mx-auto">
-                                <form class="form-navbar-geeder full-radius w-50" action="" method="">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-perfil-geed-mobile" aria-controls="navbar-perfil-geed-mobile" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mt-2" id="navbar-perfil-geed-mobile">
+                        <ul class="navbar-nav mr-auto my-2">
+                            <li class="d-flex align-items-center my-2">
+                                <div class="box-small-avatar-perfil">
+                                    <img src="./assets/pic-person-perfil.webp" alt="avatar de perfil do usuario">
+                                </div>
+                                <span class="mx-3">Name usuario</span>
+                            </li>
+                            <li class="nav-item my-2">
+                                <form class="form-navbar-geeder flex-fill" action="" method="">
                                     <div class="box-content-form d-flex position-relative">
                                         <img class="ic-search position-absolute" src="./assets/ic-search.svg" alt="icone de pesquisa">
-                                        <input type="text" name="search-desktop" placeholder="Pesquisar...">
+                                        <input type="text" name="search-mobile" placeholder="Pesquisar...">
                                     </div>
                                 </form>
                             </li>
-                            <li class="nav-item d-flex align-items-center ml-auto">
-                                <div class="bar-user d-flex align-items-center ml-auto">
-                                <div class="divisor mx-4"></div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="box-small-avatar-perfil">
-                                            <img src="./assets/pic-person-perfil.webp" alt="avatar de perfil do usuario">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
-        </div>
-
-        <!-- nav mobile -->
-        <div class="d-block d-lg-none">
-            <nav class="navbar navbar-perfil-mobile navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/lg-colorida.png" alt="logomarca geed">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-perfil-geed-mobile" aria-controls="navbar-perfil-geed-mobile" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse mt-2" id="navbar-perfil-geed-mobile">
-                    <ul class="navbar-nav mr-auto my-2">
-                        <li class="d-flex align-items-center my-2">
-                            <div class="box-small-avatar-perfil">
-                                <img src="./assets/pic-person-perfil.webp" alt="avatar de perfil do usuario">
+                </nav>
+            </div>
+        </header>
+    
+        <section class="user-job pb-4" style="background: #d9d9d9;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <div class="box-highlight-avatar-perfil">
+                            <img src="./assets/pic-person-perfil.webp" alt="avatar de perfil do usuario">
+                        </div>
+                        <div class="mt-4">
+                            <p class="sub-title mx-4">Allan Victor</p>
+                            <p class="text-content mx-4">Coloque aqui o serviço  que o perfil oferece </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box-trade text-center">
+                            <p class="sub-title">Algum texto aqui</p>
+                            <div>
+                                <a class="btn-green text-white" href="#">Fazer Geed</a>
                             </div>
-                            <span class="mx-3">Name usuario</span>
-                        </li>
-                        <li class="nav-item my-2">
-                            <form class="form-navbar-geeder flex-fill" action="" method="">
-                                <div class="box-content-form d-flex position-relative">
-                                    <img class="ic-search position-absolute" src="./assets/ic-search.svg" alt="icone de pesquisa">
-                                    <input type="text" name="search-mobile" placeholder="Pesquisar...">
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <section class="user-job pb-4" style="background: #d9d9d9;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6">
-                    <div class="box-highlight-avatar-perfil">
-                        <img src="./assets/pic-person-perfil.webp" alt="avatar de perfil do usuario">
-                    </div>
-                    <div class="mt-4">
-                        <p class="sub-title mx-4">Allan Victor</p>
-                        <p class="text-content mx-4">Coloque aqui o serviço  que o perfil oferece </p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="box-trade text-center">
-                        <p class="sub-title">Algum texto aqui</p>
-                        <div>
-                            <a class="btn-green text-white" href="#">Fazer Geed</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="chart pt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="title text-center">Metas</h3>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-around mt-5">
-                <div class="col-12 col-md-8 col-lg-4">
-                    <canvas id="myChart" width="400" height="400"></canvas>
-                </div>
-                <div class="col-12 col-lg-4 mt-5 mt-lg-0">
-                    <div class="wrapper-bar-progress">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-    <section class="products py-5">
-        <form id="form-store" action="" method="post">
+        </section>
+    
+        <section class="chart pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <h3 class="title">Loja Virtual</h3>
+                    <div class="col-12">
+                        <h3 class="title text-center">Metas</h3>
                     </div>
                 </div>
-                <div class="row justify-content-center mt-5">
-                    <div class="col-12 col-md-8 col-lg-6 d-flex my-2 my-lg-0">
-                        <div class="blog-card d-flex flex-wrap">
-                            <div class="d-lg-flex">
-                                <div class="meta">
-                                    <img src="https://http2.mlstatic.com/cesta-basica-econmica-media-25-itens-D_NQ_NP_420325-MLB25419730731_032017-F.jpg" alt="imagem do produto">
-                                </div>
-                                <div class="description">
-                                    <h3 class="sub-title">nome do produto</h1>
-                                    <p class="text-content mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing  asdasdasds ada asd asd as dasd asd asd asd asd asasdasdas</p>
-                                    <p class="price text-content">Preço unid: R$<span unity="product-1" value-unity='10'>10,00</span> </p>
-                                </div>
-                            </div>
-                            <div class="d-lg-flex justify-content-around align-items-end w-100">
-                                <input change-in='product-1' name='product-1' class="form-control input-amount" type="text" placeholder="Quantidade">
-                                <span class="erro-value"></span>
-                                <p class="total ml-auto text-content mr-5 mb-2 mt-2 mt-lg-0" price-total="product-1">Total produto: R$ <span></span> </p>
-                            </div>
-                        </div>
+                <div class="row d-flex justify-content-around mt-5">
+                    <div class="col-12 col-md-8 col-lg-4">
+                        <canvas id="myChart" width="400" height="400"></canvas>
                     </div>
-                    <div class="col-12 col-md-8 col-lg-6 d-flex my-2 my-lg-0">
-                        <div class="blog-card d-flex flex-wrap">
-                            <div class="d-lg-flex">
-                                <div class="meta">
-                                    <img src="https://st2.depositphotos.com/2162901/5367/i/950/depositphotos_53678519-stock-photo-beans-rice-lentils-oats-wheat.jpg" alt="imagem do produto">
-                                </div>
-                                <div class="description">
-                                    <h3 class="sub-title">nome do produto</h1>
-                                    <p class="text-content mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing  asdasdasds ada asd asd as dasd asd asd asd asd asasdasdas</p>
-                                    <p class="price text-content">Preço unid: R$<span unity="product-2" value-unity='20'>20,00</span> </p>
-                                </div>
-                            </div>
-                            <div class="d-lg-flex justify-content-around align-items-end w-100">
-                                <input change-in='product-2' name='product-2' class="form-control input-amount" type="text" placeholder="Quantidade">
-                                <span class="erro-value"></span>
-                                <p class="total ml-auto text-content mr-5 mb-2 mt-2 mt-lg-0" price-total="product-2">Total produto: R$ <span></span> </p>
-                            </div>
+                    <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                        <div class="wrapper-bar-progress">
+    
                         </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center mt-5">
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <span class="message-form-submited">
-                            <img src="./assets/ic-right-form.svg" alt="icone doação enviada com sucesso">
-                            Agradecemos sua Doação
-                        </span>
-                        <a href="./carrinho.html" type="submit" id="submit-form" value="submit" class="btn btn-primary w-100 disabled">Concluir Doação</a>
                     </div>
                 </div>
             </div>
-        </form>
-    </section>
-
-
-    <footer class="py-5 mt-md-0">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-12 d-lg-flex justify-content-center align-items-center">
-                    <div>
-                        <img src="./assets/lg-branca.png" alt="logo marca Geed">
+        </section>
+       
+        <section class="products py-5">
+            <form id="form-store" action="" method="post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h3 class="title">Loja Virtual</h3>
+                        </div>
                     </div>
-                    <div class="pt-2 pl-lg-3 mt-2 mt-lg-0">
-                        <p class="sub-title my-0">Uma boa ação pode mudar o mundo.</p>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-12 col-md-8 col-lg-6 d-flex my-2 my-lg-0">
+                            <div class="blog-card d-flex flex-wrap">
+                                <div class="d-lg-flex">
+                                    <div class="meta">
+                                        <img src="https://http2.mlstatic.com/cesta-basica-econmica-media-25-itens-D_NQ_NP_420325-MLB25419730731_032017-F.jpg" alt="imagem do produto">
+                                    </div>
+                                    <div class="description">
+                                        <h3 class="sub-title">nome do produto</h1>
+                                        <p class="text-content mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing  asdasdasds ada asd asd as dasd asd asd asd asd asasdasdas</p>
+                                        <p class="price text-content">Preço unid: R$<span unity="product-1" value-unity='10'>10,00</span> </p>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex justify-content-around align-items-end w-100">
+                                    <input change-in='product-1' name='product-1' class="form-control input-amount" type="text" placeholder="Quantidade">
+                                    <span class="erro-value"></span>
+                                    <p class="total ml-auto text-content mr-5 mb-2 mt-2 mt-lg-0" price-total="product-1">Total produto: R$ <span></span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-6 d-flex my-2 my-lg-0">
+                            <div class="blog-card d-flex flex-wrap">
+                                <div class="d-lg-flex">
+                                    <div class="meta">
+                                        <img src="https://st2.depositphotos.com/2162901/5367/i/950/depositphotos_53678519-stock-photo-beans-rice-lentils-oats-wheat.jpg" alt="imagem do produto">
+                                    </div>
+                                    <div class="description">
+                                        <h3 class="sub-title">nome do produto</h1>
+                                        <p class="text-content mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing  asdasdasds ada asd asd as dasd asd asd asd asd asasdasdas</p>
+                                        <p class="price text-content">Preço unid: R$<span unity="product-2" value-unity='20'>20,00</span> </p>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex justify-content-around align-items-end w-100">
+                                    <input change-in='product-2' name='product-2' class="form-control input-amount" type="text" placeholder="Quantidade">
+                                    <span class="erro-value"></span>
+                                    <p class="total ml-auto text-content mr-5 mb-2 mt-2 mt-lg-0" price-total="product-2">Total produto: R$ <span></span> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <span class="message-form-submited">
+                                <img src="./assets/ic-right-form.svg" alt="icone doação enviada com sucesso">
+                                Agradecemos sua Doação
+                            </span>
+                            <a href="./carrinho.html" type="submit" id="submit-form" value="submit" class="btn btn-primary w-100 disabled">Concluir Doação</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-7 d-lg-flex justify-content-center mt-3">
-                    <ul class="list-inline w-100 d-lg-flex d-none justify-content-between align-items-center px-5 mb-2">
-                        <li class="list-inline-item d-flex align-items-center">
-                            <img src="./assets/ic-facebook.png" alt="icone do facebook">
-                            <a href="#" target="_blank">
-                                <span class="text-content">
-                                    <span class="pl-2">/facebookpage</span> 
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item d-flex align-items-center">
-                            <img src="./assets/ic-twitter.png" alt="icone do twitter">
-                            <a href="#" target="_blank">
-                                <span class="text-content">
-                                    <span class="pl-2">twittergeed</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item d-flex align-items-center">
-                            <img src="./assets/ic-instagram.png" alt="icone do instagram">
-                            <a href="#" target="_blank">
-                                <span class="text-content ">
-                                    <span class="pl-2">@geedinstagram</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="d-lg-none d-md-block">
-                        <div class="my-3">
-                            <img src="./assets/ic-facebook.png" alt="icone do facebook">
-                            <a href="#" target="_blank">
-                                <span class="text-content">
-                                    <span class="pl-2">/facebookpage</span> 
-                                </span>
-                            </a>
+            </form>
+        </section>
+    
+    
+        <footer class="py-5 mt-md-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-12 d-lg-flex justify-content-center align-items-center">
+                        <div>
+                            <img src="./assets/lg-branca.png" alt="logo marca Geed">
                         </div>
-                        <div class="my-3">
-                            <img src="./assets/ic-twitter.png" alt="icone do twitter">
-                            <a href="#" target="_blank">
-                                <span class="text-content">
-                                    <span class="pl-2">twittergeed</span>
-                                </span>
-                            </a>
+                        <div class="pt-2 pl-lg-3 mt-2 mt-lg-0">
+                            <p class="sub-title my-0">Uma boa ação pode mudar o mundo.</p>
                         </div>
-                        <div class="my-3">
-                            <img src="./assets/ic-instagram.png" alt="icone do instagram">
-                            <a href="#" target="_blank">
-                                <span class="text-content ">
-                                    <span class="pl-2">@geedinstagram</span>
-                                </span>
-                            </a>
-                        </div> 
                     </div>
-                </div>
-                <div class="col-12 text-lg-center">
-                    <p class="text-content mb-0">Alguma informação sobre a Geed aqui</p>
+                    <div class="col-12 col-lg-7 d-lg-flex justify-content-center mt-3">
+                        <ul class="list-inline w-100 d-lg-flex d-none justify-content-between align-items-center px-5 mb-2">
+                            <li class="list-inline-item d-flex align-items-center">
+                                <img src="./assets/ic-facebook.png" alt="icone do facebook">
+                                <a href="#" target="_blank">
+                                    <span class="text-content">
+                                        <span class="pl-2">/facebookpage</span> 
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item d-flex align-items-center">
+                                <img src="./assets/ic-twitter.png" alt="icone do twitter">
+                                <a href="#" target="_blank">
+                                    <span class="text-content">
+                                        <span class="pl-2">twittergeed</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item d-flex align-items-center">
+                                <img src="./assets/ic-instagram.png" alt="icone do instagram">
+                                <a href="#" target="_blank">
+                                    <span class="text-content ">
+                                        <span class="pl-2">@geedinstagram</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-lg-none d-md-block">
+                            <div class="my-3">
+                                <img src="./assets/ic-facebook.png" alt="icone do facebook">
+                                <a href="#" target="_blank">
+                                    <span class="text-content">
+                                        <span class="pl-2">/facebookpage</span> 
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="my-3">
+                                <img src="./assets/ic-twitter.png" alt="icone do twitter">
+                                <a href="#" target="_blank">
+                                    <span class="text-content">
+                                        <span class="pl-2">twittergeed</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="my-3">
+                                <img src="./assets/ic-instagram.png" alt="icone do instagram">
+                                <a href="#" target="_blank">
+                                    <span class="text-content ">
+                                        <span class="pl-2">@geedinstagram</span>
+                                    </span>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-12 text-lg-center">
+                        <p class="text-content mb-0">Alguma informação sobre a Geed aqui</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    
 
     <script src="./dist/app.js"></script>
 </body>
