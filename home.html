@@ -10,19 +10,54 @@
 <body>
 
     <div id="body-content">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="container">
                 <a class="navbar-brand" href="home.html">
-                    <img src="./assets/lg-colorida.png" alt="logo marca da Geed">
+                    <img src="./assets/lg-colorida.png" alt="imagem de capa">
                 </a>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="btn-orange text-white" href="#">
-                            Entrar
-                        </a>
-                    </li>
-                </ul>
-            
+                <div class="collapse navbar-collapse">
+                    <div id="upCartMaster w-100">
+                        <ul class="navbar-nav w-100 d-flex flex-fill justify-content-center align-items-center">
+                            <li class="nav-item d-flex align-items-center ml-auto"><a href="https://localhost:44300/Default">Home</a></li>
+                            <li class="nav-item d-flex align-items-center ml-auto"><a href="https://localhost:44300/GEED/GeedEvents">Eventos</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center ml-auto">
+                                <a href="https://localhost:44300/GEED/GeedspotProfile?geedspotId=1">
+                                    GeedSpots
+                                </a>
+                            </li>
+                            <li class="d-flex flex-fill justify-content-center nav-item mx-auto">
+                                <form class="form-navbar-geeder full-radius" action="" method="">
+                                    <div class="box-content-form d-flex position-relative">
+                                        <img class="ic-search position-absolute" src="./assets/ic-search.svg" alt="icone de pesquisa">
+                                        <input type="text" name="search-desktop" placeholder="Pesquisar...">
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="nav-item d-flex align-items-center ">
+                                <div class="bar-user d-flex align-items-center" style="margin: 0;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="divisor mx-4"></div>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center ml-auto">
+                                
+                                <a href="https://localhost:44300/ShoppingCart" id="cartCount">Cart (0)</a>
+                            </li>
+                            
+                            <li class="nav-item d-flex align-items-center mr-auto">
+                                <a href="https://localhost:44300/Account/PrivacyPolicy.html">Privacidade</a>
+                            </li>
+                            
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="https://localhost:44300/Account/Login">Log in</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
 
