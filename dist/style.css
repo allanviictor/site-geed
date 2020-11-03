@@ -198,6 +198,175 @@ footer {
   border: 1px solid #117a75;
   background: #fff; }
 
+.demo-card-image img {
+  width: 100%;
+  height: 200px;
+  background-size: cover; }
+
+.demo-card-image .mask {
+  width: 100%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.demo-card-event.mdl-card {
+  width: 100%;
+  height: 226px;
+  background: #fff;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28); }
+
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2); }
+
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start; }
+
+.mdl-card__title.mdl-card--expand {
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .mdl-card__title.mdl-card--expand .text-content {
+    font-family: 'louis-george';
+    color: #7c7c7c;
+    font-size: 18px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; }
+
+.description-event {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.data-event {
+  background: red;
+  width: 50%; }
+
+.demo-card-event h4 {
+  color: #117a75;
+  font-size: 25px;
+  font-family: "pt-sans";
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 0; }
+
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center; }
+
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff; }
+
+/** body
+    padding: 20px
+    background: #fafafa
+    position: relative
+ **/
+.card-footer {
+  height: 30%;
+  border: none !important; }
+  .card-footer .calendar-box {
+    background: #ffffff;
+    color: #666666;
+    width: 50px;
+    text-align: center;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    float: left; }
+  .card-footer .calendar-month {
+    display: block;
+    background: #117a75;
+    font-size: 11.5px;
+    line-height: 8px;
+    font-family: 'pt-sans';
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    padding: 8.5px 0;
+    margin: 0px 0 0 0;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .card-footer .calendar-day {
+    font-family: 'louis-george';
+    font-weight: 400;
+    height: 67%;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    color: #696969; }
+  .card-footer .event-local-box {
+    background: #f6f6f6;
+    font-family: 'louis-george';
+    font-size: 13.5px;
+    font-weight: 400;
+    height: 100%;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    margin-left: 50px; }
+    .card-footer .event-local-box .line {
+      display: flex;
+      width: 100%;
+      color: #696969;
+      font-size: 13px;
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+      padding: 0px 15px; }
+      .card-footer .event-local-box .line img {
+        width: 20px; }
+      .card-footer .event-local-box .line p {
+        font-family: 'pt-sans';
+        font-weight: bold;
+        font-size: 15px;
+        display: flex;
+        align-items: center; }
+      .card-footer .event-local-box .line span {
+        margin-left: 5px;
+        color: #636363; }
+    .card-footer .event-local-box .btn-green {
+      font-weight: bold;
+      font-family: 'pt-sans';
+      border-radius: 3px;
+      padding: 8px 25px;
+      font-size: 14px;
+      cursor: pointer;
+      color: white;
+      background-color: #117a75;
+      box-shadow: 0 0 4px #999;
+      outline: none; }
+      .card-footer .event-local-box .btn-green:hover {
+        background: #128882; }
+
+.link-card-style:hover {
+  color: #117a75;
+  text-decoration: none; }
+
+.card-wrapper {
+  transition: .3s; }
+  .card-wrapper:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05, 1.05);
+    transition: .3s; }
+
 .doing-geed {
   background: #30c6bf; }
 
@@ -309,6 +478,43 @@ footer {
   .user-job .btn-green img {
     width: 25px;
     margin-left: 10px; }
+
+.user-job .text-content {
+  line-height: 1.5;
+  font-size: 20px; }
+
+.geeder:hover {
+  text-decoration: none; }
+
+.action {
+  color: #727272;
+  font-family: 'pt-sans';
+  font-weight: bold;
+  font-size: 25px; }
+
+.basket-productQuantity {
+  width: 105px;
+  align-items: center; }
+  .basket-productQuantity .quantityIcon {
+    cursor: pointer;
+    width: 12px; }
+
+.quantityInputBox {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #e3e3e3;
+  border-radius: 3px;
+  justify-content: space-between;
+  padding: 0 8px; }
+  .quantityInputBox input {
+    width: 45px;
+    height: 30px;
+    border: none;
+    text-align: center; }
+  .quantityInputBox input::-webkit-outer-spin-button,
+  .quantityInputBox input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
 
 .blog-card {
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
@@ -565,6 +771,9 @@ body, html {
 #body-content {
   margin-bottom: 232px; }
 
+.margin-navbar {
+  margin-top: 85px; }
+
 /* @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap') */
 @font-face {
   font-family: 'louis-george';
@@ -578,7 +787,7 @@ body, html {
   font-style: normal; }
 
 .title {
-  font-size: 52px;
+  font-size: 42px;
   font-family: "pt-sans";
   font-weight: 400;
   line-height: 35px; }
@@ -600,7 +809,7 @@ body, html {
 
 @media (max-width: 767px) {
   #body-content {
-    margin: 0; }
+    margin-bottom: 400px; }
   .navbar .navbar-brand img {
     width: 120px; }
   .btn-orange,
@@ -666,7 +875,11 @@ body, html {
     padding-left: 0;
     margin-top: 8px; }
   .row-divisor:after {
-    display: none; } }
+    display: none; }
+  .mdl-card__title.mdl-card--expand .text-content {
+    font-size: 15px; }
+  .mdl-card__title.mdl-card--expand h4 {
+    font-size: 20px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .geed-spot .title:after {

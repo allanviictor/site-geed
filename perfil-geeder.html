@@ -60,17 +60,6 @@
                                     <li>
                                         <a href="javascript:__doPostBack('ctl00$ctl15$ctl02$ctl00','')">Log off</a>
                                     </li>
-                                            
-                                    <!-- <li class="nav-item d-flex align-items-center ml-auto">
-                                        <div class="bar-user d-flex align-items-center ml-auto">
-                                        <div class="divisor mx-4"></div>
-                                            <div class="d-flex align-items-center">
-                                                <div class="box-small-avatar-perfil">
-                                                    <img src="./assets/pic-person-perfil.webp" alt="avatar de perfil do usuario">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -107,26 +96,30 @@
                     </div>
                 </nav>
             </div>
+
         </header>
-        <!-- style="background: #d9d9d9;" -->
+
         <section class="user-job pb-4" style="background: #ffffff;" >
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-6">
                         <div class="row">
-                            <div class="col-4">
-                                <div class="box-highlight-avatar-perfil">
+                            <div>
+                                <div class="box-highlight-avatar-perfil ml-2 ml-lg-0">
                                     <img src="./assets/pic-person-perfil.webp" alt="avatar de perfil do usuario">
                                 </div>
                             </div>
-                            <div class="col-8">
-                                <p class="text-content mx-4">Ação realiza por: <span>Geeder</span></p>
+                            <div class="col-lg-8 col-12 d-flex align-items-center">
+                                <p class="text-content">Ação realiza por: <a class="geeder" href="">Allan Victor</a></p>
                             </div>
                         </div>
                         
                         <div class="mt-4">
-                            <p class="sub-title mx-4">Allan Victor</p>
-                            <p class="text-content mx-4">Coloque aqui o serviço  que o perfil oferece </p>
+                            <p class=" action">Cestas basicas </p>
+                            <p  class="text-content mx-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consectetur rerum harum, maiores quia quam, possimus impedit, et nihil corporis suscipit facilis. 
+                                Exercitationem ipsum ab enim voluptatem quo inventore sint.
+                            </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
@@ -152,17 +145,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="title text-center">Metas</h3>
+                        <h3 class="title text-center text-lg-left">Metas</h3>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-around mt-5">
-                    <div class="col-12 col-md-8 col-lg-4">
+                    <!-- <div class="col-12 col-md-8 col-lg-4">
                         <canvas id="myChart" width="400" height="400"></canvas>
-                    </div>
-                    <div class="col-12 col-lg-4 mt-5 mt-lg-0">
-                        <div class="wrapper-bar-progress">
-    
-                        </div>
+                    </div> -->
+                    <div class="col-12 col-lg-12 mt-5 mt-lg-0">
+                        <div class="wrapper-bar-progress"></div>
                     </div>
                 </div>
             </div>
@@ -172,7 +163,7 @@
             <form id="form-store" action="" method="post">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center text-lg-left">
                             <h3 class="title">Loja Virtual</h3>
                         </div>
                     </div>
@@ -181,18 +172,26 @@
                             <div class="blog-card d-flex flex-wrap">
                                 <div class="d-lg-flex">
                                     <div class="meta">
-                                        <img src="https://http2.mlstatic.com/cesta-basica-econmica-media-25-itens-D_NQ_NP_420325-MLB25419730731_032017-F.jpg" alt="imagem do produto">
+                                        <img src="https://st2.depositphotos.com/2162901/5367/i/950/depositphotos_53678519-stock-photo-beans-rice-lentils-oats-wheat.jpg" alt="imagem do produto">
                                     </div>
                                     <div class="description">
                                         <h3 class="sub-title">nome do produto</h1>
                                         <p class="text-content mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing  asdasdasds ada asd asd as dasd asd asd asd asd asasdasdas</p>
-                                        <p class="price text-content">Preço unid: R$<span unity="product-1" value-unity='10'>10,00</span> </p>
+                                        <p class="price text-content">Preço unid: R$<span unity="product-2" value-unity='20'>20,00</span> </p>
                                     </div>
                                 </div>
-                                <div class="d-lg-flex justify-content-around align-items-end w-100">
-                                    <input change-in='product-1' name='product-1' class="form-control input-amount" type="text" placeholder="Quantidade">
-                                    <span class="erro-value"></span>
-                                    <p class="total ml-auto text-content mr-5 mb-2 mt-2 mt-lg-0" price-total="product-1">Total produto: R$ <span></span> </p>
+                                <div class="basket-productQuantity quantityInputBox">
+                                    <span class="quantityIcon icon-minus">
+                                        <svg id="icon-minus" viewBox="0 0 19 8">
+                                            <path d="M0 0h19v3H0z" fill="inherit"></path>
+                                        </svg> 
+                                    </span> 
+                                    <input type="number" name="productQuantity"  min="0" value="0"> 
+                                    <span class="quantityIcon icon-plus">
+                                        <svg id="icon-plus" viewBox="0 0 19 19">
+                                            <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="inherit"></path>
+                                        </svg> 
+                                    </span> 
                                 </div>
                             </div>
                         </div>
@@ -208,10 +207,18 @@
                                         <p class="price text-content">Preço unid: R$<span unity="product-2" value-unity='20'>20,00</span> </p>
                                     </div>
                                 </div>
-                                <div class="d-lg-flex justify-content-around align-items-end w-100">
-                                    <input change-in='product-2' name='product-2' class="form-control input-amount" type="text" placeholder="Quantidade">
-                                    <span class="erro-value"></span>
-                                    <p class="total ml-auto text-content mr-5 mb-2 mt-2 mt-lg-0" price-total="product-2">Total produto: R$ <span></span> </p>
+                                <div class="basket-productQuantity quantityInputBox">
+                                    <span class="quantityIcon icon-minus">
+                                        <svg id="icon-minus" viewBox="0 0 19 8">
+                                            <path d="M0 0h19v3H0z" fill="inherit"></path>
+                                        </svg> 
+                                    </span> 
+                                    <input type="number" name="productQuantity"  min="0" value="0"> 
+                                    <span class="quantityIcon icon-plus">
+                                        <svg id="icon-plus" viewBox="0 0 19 19">
+                                            <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="inherit"></path>
+                                        </svg> 
+                                    </span> 
                                 </div>
                             </div>
                         </div>

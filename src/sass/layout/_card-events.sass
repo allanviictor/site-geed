@@ -1,0 +1,170 @@
+.demo-card-image
+    img
+        width: 100%
+        height: 200px
+        background-size: cover
+    .mask   
+        width: 100%
+        height: 200px
+        background: rgba(0,0,0,.4)
+        position: absolute
+        top: 0
+        left: 0
+
+.demo-card-image > .mdl-card__actions 
+    height: 52px
+    padding: 18px
+    background: rgba(0, 0, 0, 0.2)
+
+.demo-card-image__filename 
+    color: #fff
+    font-size: 14px
+    font-weight: 500
+
+
+.demo-card-event.mdl-card 
+    width: 100%
+    height: 226px
+    background: #fff
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28)
+
+.demo-card-event > .mdl-card__actions 
+    border-color: rgba(255, 255, 255, 0.2)
+
+.demo-card-event > .mdl-card__title 
+    align-items: flex-start
+
+.mdl-card__title.mdl-card--expand
+    height: 70% 
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    .text-content   
+        font-family: 'louis-george'
+        color: #7c7c7c
+        font-size: 18px
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 4
+        -webkit-box-orient: vertical
+
+.description-event  
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+.data-event 
+    background: red
+    width: 50%
+
+.demo-card-event
+    h4 
+        color: $primary
+        @include fonts(400, 25px, 'pt-sans', 20px)
+        margin-top: 0
+
+.demo-card-event > .mdl-card__actions 
+    display: flex
+    box-sizing: border-box
+    align-items: center
+
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button 
+    color: #fff
+
+
+/** body 
+    padding: 20px
+    background: #fafafa
+    position: relative
+ **/
+.card-footer    
+    height: 30%
+    border: none !important
+    .calendar-box
+        background: #ffffff
+        color: #666666
+        width: 50px
+        text-align: center
+        height: 100%
+        font-size: 20px
+        font-weight: bold
+        padding: 0
+        float: left
+    .calendar-month 
+        display: block
+        background: $primary
+        font-size: 11.5px
+        line-height: 8px
+        font-family: 'pt-sans'
+        letter-spacing: 1.2px
+        font-weight: bold
+        padding: 8.5px 0
+        margin: 0px 0 0 0
+        text-transform: uppercase
+        color: #ffffff
+    .calendar-day   
+        font-family: 'louis-george'
+        font-weight: 400
+        height: 67%
+        font-weight: 700
+        font-size: 27px
+        line-height: 40px
+        color: #696969
+    .event-local-box
+        background: #f6f6f6
+        font-family: 'louis-george'
+        font-size: 13.5px
+        font-weight: 400
+        height: 100%
+        padding: 5px 5px 5px 10px
+        text-align: left
+        margin-left: 50px
+        .line   
+            display: flex
+            width: 100%
+            color: #696969
+            font-size: 13px
+            align-items: center
+            height: 100%
+            justify-content: space-between
+            padding: 0px 15px
+            img 
+                width: 20px
+            p   
+                font-family: 'pt-sans'
+                font-weight: bold
+                font-size: 15px
+                display: flex
+                align-items: center
+            & span  
+                margin-left: 5px
+                color: #636363
+        .btn-green  
+            font-weight: bold
+            font-family: 'pt-sans'
+            border-radius: 3px
+            padding: 8px 25px
+            font-size: 14px
+            cursor: pointer
+            color: white
+            background-color: $primary
+            box-shadow: 0 0 4px #999
+            outline: none
+            &:hover
+                background: #128882
+
+.link-card-style
+    &:hover    
+        color: $primary
+        text-decoration: none
+
+.card-wrapper
+    transition: .3s
+    &:hover 
+        box-shadow: 0px 20px 40px rgba(0,0,0,0.4)
+        transform: scale(1.05,1.05)
+        transition: .3s
+

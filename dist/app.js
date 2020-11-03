@@ -219,6 +219,26 @@ const line_bars = values_chart.map((value,index) =>{
 });line_bars
 
 
+$('.quantityIcon').click(function(){
+    const input = $("input[name='productQuantity']")
+    console.log(input.val())
+
+    if($(this).hasClass("icon-minus")){
+        input.val((index, curValue) => {
+            if(input.val() == 0){
+                return curValue
+            }
+            return --curValue
+        })
+        console.log('menos')
+    } else if($(this).hasClass("icon-plus")) {
+        input.val((index, curValue) => {
+            return ++curValue 
+        })
+    }
+})
+
+
 
 
 
