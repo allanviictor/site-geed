@@ -61,60 +61,13 @@ b.attr("data-mask-reverse")&&(d.reverse=!0);b.attr("data-mask-clearifnotmatch")&
 delete a.maskWatchers[this.selector];return this.each(function(){var b=a(this).data("mask");b&&b.remove().removeData("mask")})};a.fn.cleanVal=function(){return this.data("mask").getCleanVal()};a.applyDataMask=function(b){b=b||a.jMaskGlobals.maskElements;(b instanceof a?b:a(b)).filter(a.jMaskGlobals.dataMaskAttr).each(f)};k={maskElements:"input,td,span,div",dataMaskAttr:"*[data-mask]",dataMask:!0,watchInterval:300,watchInputs:!0,keyStrokeCompensation:10,useInput:!/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent)&&
 k("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translation:{0:{pattern:/\d/},9:{pattern:/\d/,optional:!0},"#":{pattern:/\d/,recursive:!0},A:{pattern:/[a-zA-Z0-9]/},S:{pattern:/[a-zA-Z]/}}};a.jMaskGlobals=a.jMaskGlobals||{};k=a.jMaskGlobals=a.extend(!0,{},k,a.jMaskGlobals);k.dataMask&&a.applyDataMask();setInterval(function(){a.jMaskGlobals.watchDataMask&&a.applyDataMask()},k.watchInterval)},window.jQuery,window.Zepto);
 
-$('.input-amount').keyup(function(e){
-    const prop = $(this).attr('change-in')
-    const value_input = $(this).val()
-    const value_unity = $(`span[unity='${prop}']`).attr('value-unity')
-    var array_validation = []
 
-    $('.input-amount').each(function(index,element){
-        array_validation.push( Math.floor($(this).val()) )
-        
-    })
-
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    const result = array_validation.reduce(reducer)
-
-    if(result == 0 || !$.isNumeric(result) || NaN){
-        $(`.total[price-total='${prop}'] span`).html('')
-        $("#submit-form").addClass('disabled')
-    }
-    else{
-        $(`.total[price-total='${prop}'] span`).html(value_input * value_unity).append(',00')
-        $("#submit-form").removeClass('disabled');
-    }
-    
-})
 
 $('.erro-value').hide()
 $('.message-form-submited').hide()
 
 
-/* $('#form-store').submit(function(event){
 
-    event.preventDefault();
-
-    var array_validation = []
-    $('.input-amount').each(function(index,element){
-        array_validation.push( Math.floor($(this).val()) )
-        
-    })
-
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    const result = array_validation.reduce(reducer)
-
-    if( result == 0 || !$.isNumeric(result) || NaN){
-        $('.erro-value').fadeIn( "slow" ).text('digite a quantidade de produtos')
-        setTimeout(function(){ $('.erro-value').fadeOut() }, 3000)
-        return false;
-    }
-    else{
-        $('.message-form-submited').fadeIn( "slow" )
-        console.log(result)
-        return true;
-    }
-
-}); */
 
 $('.btn-car-shoping').click(function (){
     $(this).parent().parent().remove();
@@ -219,24 +172,19 @@ const line_bars = values_chart.map((value,index) =>{
 });line_bars
 
 
-$('.quantityIcon').click(function(){
-    const input = $("input[name='productQuantity']")
-    console.log(input.val())
-
-    if($(this).hasClass("icon-minus")){
-        input.val((index, curValue) => {
-            if(input.val() == 0){
-                return curValue
-            }
-            return --curValue
-        })
-        console.log('menos')
-    } else if($(this).hasClass("icon-plus")) {
-        input.val((index, curValue) => {
-            return ++curValue 
-        })
+$( document ).scroll(function() {
+    if($(window).scrollTop() > 150) {
+        $('.navbar.navbar-desktop').addClass('nopadding')
+        $('.navbar.navbar-desktop .navbar-brand').addClass('navbrand-reduzida')
+        $('.navbar.navbar-desktop .navlogonormal').attr("src", './assets/lg-logo-reduzida.png')
+       
+    } else if($(window).scrollTop() < 100){
+        $('.navbar.navbar-desktop').removeClass('nopadding')
+        $('.navbar.navbar-desktop .navbar-brand').removeClass('navbrand-reduzida')
+        $('.navbar.navbar-desktop .navlogonormal').attr("src", './assets/lg-colorida.png')
     }
-})
+});
+
 
 
 

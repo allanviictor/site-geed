@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registro</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./dist/style.css" >
+    <title>perfil geed</title>
 </head>
 <body>
 
-    <div id="body-content">
+    <div id="body-content" class="cesta-geeds  ">
 
+       
         <!-- nav desktop -->
         <div class="d-lg-block d-none">
             <nav class="navbar navbar-desktop navbar-expand-lg ">
@@ -109,53 +111,178 @@
                 </div>
             </nav>
         </div>
+    
+        
 
+        <div class="container margin-navbar">
+            <div class="row pt-lg-5">
+                <div class="col-12">
+                    <h3 class="title" >minha cesta</h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-8 col-12">
+                    <div class="basket-products">
+                        <div class="basket-columns d-lg-flex d-none">
+                            <h3 class="basket-column --bigger">Produto </h3>
+                            <h3 class="basket-column --quantity --textCentered">Qtd.</h3>
+                            <h3 class="basket-column --textCentered">Preço</h3>
+                        </div>
+                        <section class="basket-content animate-fade animate-height">
+                            <ul class="list-unstyled basket-items">
+                                <li class="basket-product">
+                                    <div class="basket-productInfo__wrapper">
+                                        <div class="LazyLoad is-visible basket-productThumbnail">
+                                            <figure class="basket-productThumbnail"> 
+                                                <img src="./assets/pic-event.jpg">
+                                            </figure>
+                                        </div>
+                                        <div class="basket-productTitle__wrapper">
+                                            <h2 class="basket-productTitle">lorem Lorem ipsum dolor sit amet, </h2>
+                                            <div class="basket-productDiffs"></div>
+                                            <p class="basket-productSellerName">Oferecido por: <b>geed.com.br</b> </p>
+                                        </div>
+                                        <div class="basket-productQuantity__wrapper">
+                                            <div class="basket-productQuantity quantityInputBox">
+                                                <span class="quantityIcon icon-minus">
+                                                    <svg
+                                                        id="icon-minus" viewBox="0 0 19 8">
+                                                        <path d="M0 0h19v3H0z" fill="inherit"></path>
+                                                    </svg> 
+                                                </span> 
+                                                <input type="number" name="productQuantity" min="1" value="1"> 
+                                                <span class="quantityIcon icon-plus">
+                                                    <svg id="icon-plus" viewBox="0 0 19 19">
+                                                        <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="inherit"></path>
+                                                    </svg> 
+                                                </span> 
+                                            </div>
+                                            <div class="basket-productRemoveAct__wrapper">
+                                                <span class="basket-productRemoveAct">remover</span>
+                                            </div>
+                                        </div>
 
-        <section class="login align-items-center margin-navbar  d-flex" >
-            <div class="container">
-                <div class="row justify-content-center my-5">
-                    <div class="col-12 col-md-8 col-lg-5">
-                        <div class="box-login">
-                            <div class="card p-3">
-                                <div class="card-body view-register">
-                                    <div class="text-center">
-                                        <h3 class="sub-title">Cadastro</h3>
+                                        <div class="basket-productPrice__wrapper">
+                                            <p class="basket-productPrice">R$ 1.249,99</p>
+                                        </div>
+                                        
                                     </div>
-                                    <form id="form-register" action="">
-                                        <div class="mb-3">
-                                            <label>Email:</label>
-                                            <input placeholder="exemplo@gmail.com" class="form-control" type="email" required>
+                                </li>
+                                <li class="basket-product">
+                                    <div class="basket-productInfo__wrapper">
+                                        <div class="LazyLoad is-visible basket-productThumbnail">
+                                            <figure class="basket-productThumbnail"> 
+                                                <img src="./assets/pic-event.jpg">
+                                            </figure>
                                         </div>
-                                        <div class="mb-3">
-                                            <label>Data de Nascimento:</label>
-                                            <input placeholder="dd/mm/aaaa" class="form-control date" type="text" required>
+                                        <div class="basket-productTitle__wrapper">
+                                            <h2 class="basket-productTitle">lorem Lorem ipsum dolor sit amet, </h2>
+                                            <div class="basket-productDiffs"></div>
+                                            <p class="basket-productSellerName">Oferecido por: <b>geed.com.br</b> </p>
                                         </div>
-                                        <div class="mb-3">
-                                            <label>Senha:</label>
-                                            <input placeholder="Senha" id="password" class="form-control" type="password" required>
+                                        <div class="basket-productQuantity__wrapper">
+                                            <div class="basket-productQuantity quantityInputBox">
+                                                <span class="quantityIcon icon-minus">
+                                                    <svg
+                                                        id="icon-minus" viewBox="0 0 19 8">
+                                                        <path d="M0 0h19v3H0z" fill="inherit"></path>
+                                                    </svg> 
+                                                </span> 
+                                                <input type="number" name="productQuantity" min="1" value="1"> 
+                                                <span class="quantityIcon icon-plus">
+                                                    <svg id="icon-plus" viewBox="0 0 19 19">
+                                                        <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="inherit"></path>
+                                                    </svg> 
+                                                </span> 
+                                            </div>
+                                            <div class="basket-productRemoveAct__wrapper">
+                                                <span class="basket-productRemoveAct">remover</span>
+                                            </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label>Confirmar Senha:</label>
-                                            <input placeholder="confirmar senha" id="confirm-password" class="form-control" type="password" required>
-                                            <span class="erro-value"></span>
+
+                                        <div class="basket-productPrice__wrapper">
+                                            <p class="basket-productPrice">R$ 1.249,99</p>
                                         </div>
-                                        <button type="submit" class="btn btn-primary mt-1 w-100 text-white">Casdastrar</button>
-                                    </form>
-                                </div>
-                                <div class="card-body view-register-success text-center">
-                                    <img class="img-fluid success-register" src="./assets/success-register.png" alt="" >
-                                    <h3 class="sub-title mt-4">Tudo Certo!</h3>
-                                    <p class="text-content mt-4">Cadastro Realizado com Sucesso</p>
-                                    <a style="cursor: pointer;" href="./home.html" class="btn btn-primary w-50 text-white">Ok</a>
-                                </div> 
+                                        
+                                    </div>
+                                </li>
+                                <li class="basket-product">
+                                    <div class="basket-productInfo__wrapper">
+                                        <div class="LazyLoad is-visible basket-productThumbnail">
+                                            <figure class="basket-productThumbnail"> 
+                                                <img src="./assets/pic-event.jpg">
+                                            </figure>
+                                        </div>
+                                        <div class="basket-productTitle__wrapper">
+                                            <h2 class="basket-productTitle">lorem Lorem ipsum dolor sit amet, </h2>
+                                            <div class="basket-productDiffs"></div>
+                                            <p class="basket-productSellerName">Oferecido por: <b>geed.com.br</b> </p>
+                                        </div>
+                                        <div class="basket-productQuantity__wrapper">
+                                            <div class="basket-productQuantity quantityInputBox">
+                                                <span class="quantityIcon icon-minus">
+                                                    <svg
+                                                        id="icon-minus" viewBox="0 0 19 8">
+                                                        <path d="M0 0h19v3H0z" fill="inherit"></path>
+                                                    </svg> 
+                                                </span> 
+                                                <input type="number" name="productQuantity" min="1" value="1"> 
+                                                <span class="quantityIcon icon-plus">
+                                                    <svg id="icon-plus" viewBox="0 0 19 19">
+                                                        <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="inherit"></path>
+                                                    </svg> 
+                                                </span> 
+                                            </div>
+                                            <div class="basket-productRemoveAct__wrapper">
+                                                <span class="basket-productRemoveAct">remover</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-productPrice__wrapper">
+                                            <p class="basket-productPrice">R$ 1.249,99</p>
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="basket-summary">
+                        <div class="basket-wrapper">
+                            <h3 class="summary-title">Resumo do pedido</h3>
+                            <ul class="summary-details">
+                                <li class="summary-detail"><span>3 produtos</span><span>R$ 358,00</span></li>
+                            </ul>
+                            <div class="summary-total__wrapper --summary">
+                                <span class="valor-total">Total</span>
+                                <div class="summary-totalInstallments">R$ 358,00 em até 12x ou</div>
+                                <span class="summary-total">
+                                    R$ 400,00 
+                                    <span>em 1x no cartão</span>
+                                </span>
                             </div>
+                            
+                            <button id="buy-button" class="summary-buyBtn btn btn-primary btn-block btn-buy btn-fat animate-fade">
+                                <div>
+
+                                    <img src="./assets/ic-buy.svg" alt="">
+                                </div>
+                                <div>
+
+                                    Continuar
+                                </div>
+                            </button>
+                            
                         </div>
                     </div>
                 </div>
-        </section>
+            </div>
+        </div>
 
-
-        <footer class="py-5 mt-3 mt-lg-0 ">
+        
+        <footer class="py-5 mt-md-0">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-12 d-lg-flex justify-content-center align-items-center">
@@ -226,17 +353,11 @@
                 </div>
             </div>
         </footer>
+    
 
     </div>
-
-
     
-</body>
 
     <script src="./dist/app.js"></script>
-    <script>
-       
-        $('.date').mask('00/00/0000');
-        
-    </script>
+</body>
 </html>

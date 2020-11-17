@@ -13,12 +13,14 @@
 
         <header class="header-perfil">
             <div class="mask"></div>
+            
             <!-- nav desktop -->
             <div class="d-lg-block d-none">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-desktop navbar-expand-lg ">
                     <div class="container">
                         <a class="navbar-brand" href="home.html">
-                            <img src="./assets/lg-colorida.png" alt="imagem de capa">
+                            <img class="navlogonormal" src="./assets/lg-colorida.png"  alt="imagem de capa"><!-- 
+                            <img class="navlogoreduzida" src="./assets/lg-logo-reduzida.png" style="width: 40px;"   alt="imagem de capa"> -->
                         </a>
                         <div class="collapse navbar-collapse">
                             <div id="upCartMaster">
@@ -66,7 +68,7 @@
                     </div>
                 </nav>
             </div>
-    
+
             <!-- nav mobile -->
             <div class="d-block d-lg-none">
                 <nav class="navbar navbar-perfil-mobile navbar-expand-lg navbar-light bg-light">
@@ -78,6 +80,21 @@
                     </button>
                     <div class="collapse navbar-collapse mt-2" id="navbar-perfil-geed-mobile">
                         <ul class="navbar-nav mr-auto my-2">
+                            <li class="d-flex align-items-center my-2">
+                                <a href="https://localhost:44300/Default">
+                                    <span class="mx-3">Home</span>
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center my-2">
+                                <a href="https://localhost:44300/GEED/GeedspotProfile?geedspotId=1">
+                                    <span class="mx-3">GeedSpots</span>
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center my-2">
+                                <a href="https://localhost:44300/GEED/GeedEvents">
+                                    <span class="mx-3">Eventos</span>
+                                </a>
+                            </li>
                             <li class="d-flex align-items-center my-2">
                                 <div class="box-small-avatar-perfil">
                                     <img src="./assets/pic-person-perfil.webp" alt="avatar de perfil do usuario">
@@ -168,59 +185,146 @@
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
-                        <div class="col-12 col-md-8 col-lg-6 d-flex my-2 my-lg-0">
-                            <div class="blog-card d-flex flex-wrap">
-                                <div class="d-lg-flex">
-                                    <div class="meta">
-                                        <img src="https://st2.depositphotos.com/2162901/5367/i/950/depositphotos_53678519-stock-photo-beans-rice-lentils-oats-wheat.jpg" alt="imagem do produto">
-                                    </div>
-                                    <div class="description">
-                                        <h3 class="sub-title">nome do produto</h1>
-                                        <p class="text-content mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing  asdasdasds ada asd asd as dasd asd asd asd asd asasdasdas</p>
-                                        <p class="price text-content">Preço unid: R$<span unity="product-2" value-unity='20'>20,00</span> </p>
+                        <div class="col-lg-4 col-12 my-2 my-lg-2">
+                            
+                            <div class="demo-card-image mdl-card mdl-shadow--2dp position-relative">
+                                <div class="mask"></div>
+                                <img src="https://st2.depositphotos.com/2162901/5367/i/950/depositphotos_53678519-stock-photo-beans-rice-lentils-oats-wheat.jpg" alt="">
+                            </div>
+                            <div class="demo-card-event mdl-card mdl-shadow--2dp ">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <div class="d-flex h-100">
+                                        <div class="description-event p-3">
+                                            <h4>Nome Produto</h4>
+                                            <p class="text-content">Lorem ipsum dolor sit, 
+                                                amet consectetur adipisicing elit. 
+                                                Impedit architecto quod.
+                                                Lorem ipsum dolor sit, 
+                                                amet consectetur adipisicing elit. 
+                                                Impedit architecto quod
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="basket-productQuantity quantityInputBox">
-                                    <span class="quantityIcon icon-minus">
-                                        <svg id="icon-minus" viewBox="0 0 19 8">
-                                            <path d="M0 0h19v3H0z" fill="inherit"></path>
-                                        </svg> 
-                                    </span> 
-                                    <input type="number" name="productQuantity"  min="0" value="0"> 
-                                    <span class="quantityIcon icon-plus">
-                                        <svg id="icon-plus" viewBox="0 0 19 19">
-                                            <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="inherit"></path>
-                                        </svg> 
-                                    </span> 
+                                <div class="card-footer p-0">
+                                    <div class="event-local-box">
+                                        <div class="line">
+                                            <p class="m-0">
+                                                <span>Preço unid: R$20,00</span> 
+                                            </p>
+                                            <div class="basket-productQuantity quantityInputBox">
+                                                <span class="quantityIcon icon-minus">
+                                                    <svg id="icon-minus" viewBox="0 0 19 8">
+                                                        <path d="M0 0h19v3H0z" fill="#117a75"></path>
+                                                    </svg> 
+                                                </span> 
+                                                <input type="number" name="productQuantity"  min="0" value="3"> 
+                                                <span class="quantityIcon icon-plus">
+                                                    <svg id="icon-plus" viewBox="0 0 19 19">
+                                                        <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="#117a75"></path>
+                                                    </svg> 
+                                                </span> 
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
                             </div>
+                                
                         </div>
-                        <div class="col-12 col-md-8 col-lg-6 d-flex my-2 my-lg-0">
-                            <div class="blog-card d-flex flex-wrap">
-                                <div class="d-lg-flex">
-                                    <div class="meta">
-                                        <img src="https://st2.depositphotos.com/2162901/5367/i/950/depositphotos_53678519-stock-photo-beans-rice-lentils-oats-wheat.jpg" alt="imagem do produto">
-                                    </div>
-                                    <div class="description">
-                                        <h3 class="sub-title">nome do produto</h1>
-                                        <p class="text-content mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing  asdasdasds ada asd asd as dasd asd asd asd asd asasdasdas</p>
-                                        <p class="price text-content">Preço unid: R$<span unity="product-2" value-unity='20'>20,00</span> </p>
+                        <div class="col-lg-4 col-12 my-2 my-lg-2">
+                            
+                            <div class="demo-card-image mdl-card mdl-shadow--2dp position-relative">
+                                <div class="mask"></div>
+                                <img src="https://st2.depositphotos.com/2162901/5367/i/950/depositphotos_53678519-stock-photo-beans-rice-lentils-oats-wheat.jpg" alt="">
+                            </div>
+                            <div class="demo-card-event mdl-card mdl-shadow--2dp ">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <div class="d-flex h-100">
+                                        <div class="description-event p-3">
+                                            <h4>Nome Produto</h4>
+                                            <p class="text-content">Lorem ipsum dolor sit, 
+                                                amet consectetur adipisicing elit. 
+                                                Impedit architecto quod.
+                                                Lorem ipsum dolor sit, 
+                                                amet consectetur adipisicing elit. 
+                                                Impedit architecto quod
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="basket-productQuantity quantityInputBox">
-                                    <span class="quantityIcon icon-minus">
-                                        <svg id="icon-minus" viewBox="0 0 19 8">
-                                            <path d="M0 0h19v3H0z" fill="inherit"></path>
-                                        </svg> 
-                                    </span> 
-                                    <input type="number" name="productQuantity"  min="0" value="0"> 
-                                    <span class="quantityIcon icon-plus">
-                                        <svg id="icon-plus" viewBox="0 0 19 19">
-                                            <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="inherit"></path>
-                                        </svg> 
-                                    </span> 
+                                <div class="card-footer p-0">
+                                    <div class="event-local-box">
+                                        <div class="line">
+                                            <p class="m-0">
+                                                <span>Preço unid: R$20,00</span> 
+                                            </p>
+                                            <div class="basket-productQuantity quantityInputBox">
+                                                <span class="quantityIcon icon-minus">
+                                                    <svg id="icon-minus" viewBox="0 0 19 8">
+                                                        <path d="M0 0h19v3H0z" fill="#117a75"></path>
+                                                    </svg> 
+                                                </span> 
+                                                <input type="number" name="productQuantity"  min="0" value="3"> 
+                                                <span class="quantityIcon icon-plus">
+                                                    <svg id="icon-plus" viewBox="0 0 19 19">
+                                                        <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="#117a75"></path>
+                                                    </svg> 
+                                                </span> 
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
                             </div>
+                                
+                        </div>
+                        <div class="col-lg-4 col-12 my-2 my-lg-2">
+                            
+                            <div class="demo-card-image mdl-card mdl-shadow--2dp position-relative">
+                                <div class="mask"></div>
+                                <img src="https://st2.depositphotos.com/2162901/5367/i/950/depositphotos_53678519-stock-photo-beans-rice-lentils-oats-wheat.jpg" alt="">
+                            </div>
+                            <div class="demo-card-event mdl-card mdl-shadow--2dp ">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <div class="d-flex h-100">
+                                        <div class="description-event p-3">
+                                            <h4>Nome Produto</h4>
+                                            <p class="text-content">Lorem ipsum dolor sit, 
+                                                amet consectetur adipisicing elit. 
+                                                Impedit architecto quod.
+                                                Lorem ipsum dolor sit, 
+                                                amet consectetur adipisicing elit. 
+                                                Impedit architecto quod
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-0">
+                                    <div class="event-local-box">
+                                        <div class="line">
+                                            <p class="m-0">
+                                                <span>Preço unid: R$20,00</span> 
+                                            </p>
+                                            <div class="basket-productQuantity quantityInputBox">
+                                                <span class="quantityIcon icon-minus">
+                                                    <svg id="icon-minus" viewBox="0 0 19 8">
+                                                        <path d="M0 0h19v3H0z" fill="#117a75"></path>
+                                                    </svg> 
+                                                </span> 
+                                                <input type="number" name="productQuantity"  min="0" value="3"> 
+                                                <span class="quantityIcon icon-plus">
+                                                    <svg id="icon-plus" viewBox="0 0 19 19">
+                                                        <path d="M11 8V0H8v8H0v3h8v8h3v-8h8V8z" fill="#117a75"></path>
+                                                    </svg> 
+                                                </span> 
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                                
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
@@ -229,7 +333,7 @@
                                 <img src="./assets/ic-right-form.svg" alt="icone doação enviada com sucesso">
                                 Agradecemos sua Doação
                             </span>
-                            <a href="./carrinho.html" type="submit" id="submit-form" value="submit" class="btn btn-primary w-100 disabled">Concluir Doação</a>
+                            <a href="./carrinho.html" type="submit" id="submit-form" value="submit" class="btn btn-primary w-100">Concluir Doação</a>
                         </div>
                     </div>
                 </div>

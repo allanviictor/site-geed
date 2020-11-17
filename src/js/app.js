@@ -1,57 +1,10 @@
-$('.input-amount').keyup(function(e){
-    const prop = $(this).attr('change-in')
-    const value_input = $(this).val()
-    const value_unity = $(`span[unity='${prop}']`).attr('value-unity')
-    var array_validation = []
 
-    $('.input-amount').each(function(index,element){
-        array_validation.push( Math.floor($(this).val()) )
-        
-    })
-
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    const result = array_validation.reduce(reducer)
-
-    if(result == 0 || !$.isNumeric(result) || NaN){
-        $(`.total[price-total='${prop}'] span`).html('')
-        $("#submit-form").addClass('disabled')
-    }
-    else{
-        $(`.total[price-total='${prop}'] span`).html(value_input * value_unity).append(',00')
-        $("#submit-form").removeClass('disabled');
-    }
-    
-})
 
 $('.erro-value').hide()
 $('.message-form-submited').hide()
 
 
-/* $('#form-store').submit(function(event){
 
-    event.preventDefault();
-
-    var array_validation = []
-    $('.input-amount').each(function(index,element){
-        array_validation.push( Math.floor($(this).val()) )
-        
-    })
-
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    const result = array_validation.reduce(reducer)
-
-    if( result == 0 || !$.isNumeric(result) || NaN){
-        $('.erro-value').fadeIn( "slow" ).text('digite a quantidade de produtos')
-        setTimeout(function(){ $('.erro-value').fadeOut() }, 3000)
-        return false;
-    }
-    else{
-        $('.message-form-submited').fadeIn( "slow" )
-        console.log(result)
-        return true;
-    }
-
-}); */
 
 $('.btn-car-shoping').click(function (){
     $(this).parent().parent().remove();
@@ -156,24 +109,19 @@ const line_bars = values_chart.map((value,index) =>{
 });line_bars
 
 
-$('.quantityIcon').click(function(){
-    const input = $("input[name='productQuantity']")
-    console.log(input.val())
-
-    if($(this).hasClass("icon-minus")){
-        input.val((index, curValue) => {
-            if(input.val() == 0){
-                return curValue
-            }
-            return --curValue
-        })
-        console.log('menos')
-    } else if($(this).hasClass("icon-plus")) {
-        input.val((index, curValue) => {
-            return ++curValue 
-        })
+$( document ).scroll(function() {
+    if($(window).scrollTop() > 150) {
+        $('.navbar.navbar-desktop').addClass('nopadding')
+        $('.navbar.navbar-desktop .navbar-brand').addClass('navbrand-reduzida')
+        $('.navbar.navbar-desktop .navlogonormal').attr("src", './assets/lg-logo-reduzida.png')
+       
+    } else if($(window).scrollTop() < 100){
+        $('.navbar.navbar-desktop').removeClass('nopadding')
+        $('.navbar.navbar-desktop .navbar-brand').removeClass('navbrand-reduzida')
+        $('.navbar.navbar-desktop .navlogonormal').attr("src", './assets/lg-colorida.png')
     }
-})
+});
+
 
 
 
